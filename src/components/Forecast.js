@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import "./Forecast.css";
-import { connect } from "react-redux";
 import WeatherCard from "./WeatherCard";
+import { connect } from "react-redux";
 
 class Forecast extends Component {
 
-  render() {
-      
+  render() {      
     return (
       <div >
         <WeatherCard forecast= {this.props.forecast} /> 
