@@ -1,4 +1,6 @@
 const initState = {
+    error: null,
+    favourites: "",
     api_key: "bc298bc4bfb24b0881d85430192603",
     location: {
         name: "Stockholm",
@@ -208,6 +210,12 @@ const rootReducer = (state = initState, action) => {
             current: action.weatherState.current,
             forecast: action.weatherState.forecast
         }
+    } else if (action.type === "UPDATE_FAVOURITES") {
+        return {
+            ...state,
+            favourites: action.favourites
+        }
+        
     }
     return state;
 }

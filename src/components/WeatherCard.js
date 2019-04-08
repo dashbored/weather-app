@@ -14,8 +14,8 @@ const WeatherCard  = ({forecast}) => {
                         <h5 className="card-title">{date.format("dddd")}</h5>
                         <h6 className="card-subtitle mb-2 text-muted">{date.format("MMMM Do")}</h6>
                     </div>
+                    <p className="card-text font-weight-bold mb-2">Avg: {d.day.avgtemp_c}&#176;C</p>
                     <p className="card-text">Max: {d.day.maxtemp_c}&#176;C</p>
-                    <p className="card-text">Avg: {d.day.avgtemp_c}&#176;C</p>
                     <p className="card-text">Min: {d.day.mintemp_c}&#176;C</p>
                 </div>
             </div>

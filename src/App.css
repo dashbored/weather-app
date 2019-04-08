@@ -39,3 +39,19 @@
 .card p {
   margin-bottom: 0;
 }
+
+.fixed-width {
+  width: 250px;
+}
+
+.invalid-border {
+  border-color: #dc3545;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+}
+
+.dropdown .show {
+  display: block !important;
+}
